@@ -37,7 +37,7 @@ public class UserDataReader {
             NullPointerException {
         String fileName = getDataRootFolder() + File.separator + type.replaceAll(" ", "_").toString() + ".json";
         String path = this.getClass().getClassLoader().getResource(fileName).getPath().replaceAll("%5c","/");
-        path = path.substring(1,path.length());
+        //path = path.substring(1,path.length());
         return new File(path);
     }
 
